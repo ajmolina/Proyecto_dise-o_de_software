@@ -233,14 +233,15 @@ public class RestauranteMenuFragment extends Fragment {
 
 
                                                       cont=rev;
-                                                        imagen=imgs;
+                                                      imagen=imgs;
                                                     }
                                                 }
                                            }
-                                           txtListChildReview.setText(cont);
-                                           Picasso.with(_context).load(imagen).resize(60, 60).into(imgView);
+
 
                                        }
+                                       txtListChildReview.setText(cont);
+                                       Picasso.with(_context).load(imagen).resize(60, 60).into(imgView);
                                    }
                                });
         query.clearCachedResult();

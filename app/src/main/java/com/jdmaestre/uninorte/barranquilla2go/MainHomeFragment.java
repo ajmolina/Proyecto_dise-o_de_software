@@ -51,8 +51,7 @@ public class MainHomeFragment extends Fragment implements
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        loc= new LocationClient(getActivity(),this,this);
-        loc.connect();
+
 
         View rootView = inflater.inflate(R.layout.fragment_main_home, container, false);
         mMapView = (MapView) rootView.findViewById(R.id.mapView);
@@ -69,7 +68,8 @@ public class MainHomeFragment extends Fragment implements
         googleMap = mMapView.getMap();
 
 
-
+        loc= new LocationClient(getActivity(),this,this);
+        loc.connect();
 
         return rootView;
 
